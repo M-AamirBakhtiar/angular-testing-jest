@@ -40,7 +40,7 @@ And add the following to the `package.json`
 
 Finally adjust the `tsconfig.spec.json` to be :-
 
-```ts
+```json
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
