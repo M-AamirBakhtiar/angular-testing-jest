@@ -61,3 +61,7 @@ In `package.json` add the following scripts
 "test:watch": "jest --watch",
 "test:coverage": "jest --coverage",
 ```
+
+## 6. Run Scripts to test if Jest is properly configured.
+
+Run the command `npm test` to see if everthing is configured properly. This will run the only test in the application right now the `app.component.spec.ts`
