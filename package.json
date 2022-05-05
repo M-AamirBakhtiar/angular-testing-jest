@@ -6,9 +6,18 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
   },
   "private": true,
+  "jest": {
+    "preset": "jest-preset-angular",
+    "setupFilesAfterEnv": [
+      "<rootDir>/setup-jest.ts"
+    ],
+    "globalSetup": "jest-preset-angular/global-setup"
+  },
   "dependencies": {
     "@angular/animations": "~13.3.0",
     "@angular/common": "~13.3.0",
